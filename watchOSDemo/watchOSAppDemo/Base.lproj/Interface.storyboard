@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="20037" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch41"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="20006"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="watchOSAppDemo" customModuleProvider="target">
+                    <items>
+                        <group width="1" alignment="center" verticalAlignment="center" layout="vertical" spacing="8" id="xYO-hE-jL6" userLabel="Body">
+                            <items>
+                                <group width="1" alignment="center" contentMode="scaleAspectFit" spacing="0.0" id="xDS-H1-OZ3" userLabel="Header">
+                                    <items>
+                                        <group alignment="center" verticalAlignment="center" contentMode="scaleAspectFit" spacing="3" id="Tlc-aL-osd">
+                                            <items>
+                                                <imageView width="30" height="30" alignment="left" image="applelogo" catalog="system" contentMode="scaleAspectFit" id="PY8-NI-edm">
+                                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </imageView>
+                                                <label height="1" alignment="left" text="watchOS Demo" textAlignment="center" id="GC4-N0-gdA">
+                                                    <fontDescription key="font" type="boldSystem" pointSize="20"/>
+                                                </label>
+                                            </items>
+                                            <edgeInsets key="margins" left="0.0" right="0.0" top="15" bottom="0.0"/>
+                                        </group>
+                                    </items>
+                                    <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                                </group>
+                                <group width="1" alignment="left" layout="vertical" id="36V-cY-NaK" userLabel="Buttons">
+                                    <items>
+                                        <button alignment="left" verticalAlignment="center" id="huQ-Y7-HHq" userLabel="Currency">
+                                            <group key="contentGroup" width="1" height="40" alignment="left" spacing="5" id="kO0-NN-OBW">
+                                                <items>
+                                                    <imageView width="25" height="25" alignment="left" verticalAlignment="center" image="eurosign.circle.fill" catalog="system" contentMode="scaleAspectFit" id="LAu-3g-c4c">
+                                                        <color key="tintColor" red="0.20270377179999999" green="0.86078917980000003" blue="0.25955097030000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    </imageView>
+                                                    <label alignment="left" verticalAlignment="center" text="Currency List" textAlignment="center" id="4UE-Py-XXo">
+                                                        <fontDescription key="font" type="system" weight="light" pointSize="16"/>
+                                                    </label>
+                                                </items>
+                                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <edgeInsets key="margins" left="5" right="0.0" top="0.0" bottom="0.0"/>
+                                            </group>
+                                            <connections>
+                                                <segue destination="2X3-HI-eng" kind="push" identifier="segueCurrency" id="3Hw-Oo-vfV"/>
+                                            </connections>
+                                        </button>
+                                        <button alignment="left" verticalAlignment="center" id="kxD-0z-2nN" userLabel="ATM/Branch">
+                                            <group key="contentGroup" width="1" height="40" alignment="left" spacing="5" id="HWh-lW-OKk">
+                                                <items>
+                                                    <imageView width="25" height="25" alignment="left" verticalAlignment="center" image="building.columns.circle.fill" catalog="system" contentMode="scaleAspectFit" id="vXX-kw-yxy">
+                                                        <color key="tintColor" red="0.20270377179999999" green="0.86078917980000003" blue="0.25955097030000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    </imageView>
+                                                    <label alignment="left" verticalAlignment="center" text="ATM/Branch" id="d06-Km-BJe">
+                                                        <fontDescription key="font" type="system" weight="light" pointSize="16"/>
+                                                    </label>
+                                                </items>
+                                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <edgeInsets key="margins" left="5" right="0.0" top="0.0" bottom="0.0"/>
+                                            </group>
+                                            <connections>
+                                                <segue destination="p2e-DG-5Nu" kind="push" identifier="segueATM" id="hgN-AM-kG8"/>
+                                            </connections>
+                                        </button>
+                                        <button alignment="left" verticalAlignment="center" id="XLJ-xB-zP1" userLabel="ContactUs">
+                                            <group key="contentGroup" width="1" height="40" alignment="left" spacing="5" id="8SE-RM-U04">
+                                                <items>
+                                                    <imageView width="25" height="25" alignment="left" verticalAlignment="center" image="phone.circle.fill" catalog="system" contentMode="scaleAspectFit" id="ldE-RM-XcE">
+                                                        <color key="tintColor" red="0.20270377179999999" green="0.86078917980000003" blue="0.25955097030000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    </imageView>
+                                                    <label alignment="left" verticalAlignment="center" text="Contact Us" id="REj-Gx-fmv">
+                                                        <fontDescription key="font" type="system" weight="light" pointSize="16"/>
+                                                    </label>
+                                                </items>
+                                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <edgeInsets key="margins" left="5" right="0.0" top="0.0" bottom="0.0"/>
+                                            </group>
+                                            <connections>
+                                                <segue destination="99e-iQ-KBe" kind="push" identifier="segueContactUs" id="2Ng-hT-Wtb"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-154" y="-77"/>
+        </scene>
+        <!--Currency Interface Controller-->
+        <scene sceneID="lLi-Su-1rv">
+            <objects>
+                <controller id="2X3-HI-eng" customClass="CurrencyInterfaceController" customModule="watchOSAppDemo" customModuleProvider="target">
+                    <items>
+                        <group width="1" alignment="left" layout="vertical" id="Ywq-B6-Lzk">
+                            <items>
+                                <table alignment="left" id="gZI-4i-FOh">
+                                    <items>
+                                        <tableRow identifier="currencyRow" id="J4b-Oe-krt" customClass="CurrencyRowController" customModule="watchOSAppDemo" customModuleProvider="target">
+                                            <group key="rootItem" width="1" alignment="left" spacing="0.0" id="1j7-FJ-AOa">
+                                                <items>
+                                                    <group height="1" alignment="left" verticalAlignment="center" spacing="10" id="IqX-YE-Spa">
+                                                        <items>
+                                                            <imageView alignment="center" verticalAlignment="center" image="europeanUnion" id="sFs-kA-mJO"/>
+                                                            <label alignment="center" verticalAlignment="center" text="CUR" id="ttM-gg-XXh">
+                                                                <fontDescription key="font" type="system" pointSize="12"/>
+                                                            </label>
+                                                        </items>
+                                                        <edgeInsets key="margins" left="10" right="0.0" top="0.0" bottom="0.0"/>
+                                                    </group>
+                                                    <group height="1" alignment="right" verticalAlignment="center" layout="vertical" id="6Fc-A7-fwe">
+                                                        <items>
+                                                            <label alignment="right" verticalAlignment="center" text="2,7855" textAlignment="right" id="aft-6W-odL">
+                                                                <fontDescription key="font" type="boldSystem" pointSize="14"/>
+                                                            </label>
+                                                            <label alignment="right" verticalAlignment="center" text="Buying: 2,7668" textAlignment="right" id="Xs8-yf-saj">
+                                                                <color key="textColor" red="0.001179445238" green="0.55139001740000004" blue="0.1196345977" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <fontDescription key="font" type="system" pointSize="10"/>
+                                                            </label>
+                                                        </items>
+                                                        <edgeInsets key="margins" left="0.0" right="13" top="0.0" bottom="0.0"/>
+                                                    </group>
+                                                </items>
+                                                <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                                            </group>
+                                            <connections>
+                                                <outlet property="buyRate" destination="Xs8-yf-saj" id="rb7-ob-6Sa"/>
+                                                <outlet property="image" destination="sFs-kA-mJO" id="IWF-QY-kfX"/>
+                                                <outlet property="name" destination="ttM-gg-XXh" id="VDC-iN-Q4Z"/>
+                                                <outlet property="sellRate" destination="aft-6W-odL" id="12O-YW-HA9"/>
+                                            </connections>
+                                        </tableRow>
+                                    </items>
+                                </table>
+                            </items>
+                            <edgeInsets key="margins" left="0.0" right="0.0" top="10" bottom="0.0"/>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="currencyTable" destination="gZI-4i-FOh" id="Gix-Uj-Pq2"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="126" y="-78"/>
+        </scene>
+        <!--Contact Us Interface Controller-->
+        <scene sceneID="oTn-LG-3Wn">
+            <objects>
+                <controller fullScreen="YES" id="99e-iQ-KBe" customClass="ContactUsInterfaceController" customModule="watchOSAppDemo" customModuleProvider="target">
+                    <items>
+                        <group width="1" alignment="left" verticalAlignment="center" layout="vertical" spacing="20" id="bbj-Qa-3rM">
+                            <items>
+                                <group width="1" alignment="left" layout="vertical" id="eID-4K-1Pu" userLabel="Labels">
+                                    <items>
+                                        <label width="1" alignment="left" verticalAlignment="center" text="0850 123 45 67" textAlignment="center" id="oRT-cP-ewZ">
+                                            <fontDescription key="font" type="boldSystem" pointSize="18"/>
+                                        </label>
+                                        <label width="1" height="22" alignment="left" verticalAlignment="center" text="Make a call?" textAlignment="center" id="RRS-3T-rwL">
+                                            <fontDescription key="font" type="system" pointSize="16"/>
+                                        </label>
+                                    </items>
+                                </group>
+                                <group width="1" alignment="left" verticalAlignment="center" layout="vertical" id="Xby-qy-B1i" userLabel="Buttons">
+                                    <items>
+                                        <button width="1" alignment="left" verticalAlignment="center" title="Call" id="z0x-0h-1LC">
+                                            <color key="titleColor" red="0.001179445238" green="0.55139001740000004" blue="0.1196345977" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <fontDescription key="font" type="boldSystem" pointSize="15"/>
+                                            <connections>
+                                                <action selector="phoneCall" destination="99e-iQ-KBe" id="yrH-UZ-9da"/>
+                                            </connections>
+                                        </button>
+                                        <button width="1" alignment="left" verticalAlignment="center" title="Cancel" id="iOh-xo-dtE">
+                                            <color key="titleColor" red="1" green="0.25490196079999999" blue="0.25490196079999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <fontDescription key="font" type="boldSystem" pointSize="15"/>
+                                            <connections>
+                                                <action selector="cancelPhoneCall" destination="99e-iQ-KBe" id="eGh-Bz-o99"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
+                            </items>
+                            <edgeInsets key="margins" left="0.0" right="0.0" top="10" bottom="0.0"/>
+                        </group>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-154.54545454545453" y="240.76744186046511"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" numberOfLines="0" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                        <segue destination="eXb-UN-Cd0" kind="relationship" relationship="dynamicInteractiveNotificationInterface" id="mpB-YA-K8N"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="watchOSAppDemo" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="Niz-AI-uX2">
+            <objects>
+                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModule="watchOSAppDemo" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="345"/>
+        </scene>
+        <!--Branch Interface Controller-->
+        <scene sceneID="air-my-EXO">
+            <objects>
+                <controller id="p2e-DG-5Nu" customClass="ATMBranchInterfaceController" customModule="watchOSAppDemo" customModuleProvider="target">
+                    <items>
+                        <group width="1" alignment="left" layout="vertical" id="RbL-l2-NbU">
+                            <items>
+                                <table alignment="left" id="9ue-mi-697">
+                                    <items>
+                                        <tableRow identifier="atmBranchRow" id="aCD-Rw-0cw" customClass="ATMBranchRowController" customModule="watchOSAppDemo" customModuleProvider="target">
+                                            <group key="rootItem" width="1" alignment="left" spacing="10" id="DMV-PP-yXM">
+                                                <items>
+                                                    <group alignment="left" verticalAlignment="center" id="NbE-KH-Ced">
+                                                        <items>
+                                                            <imageView width="32" height="32" alignment="left" verticalAlignment="center" image="building.columns.circle.fill" catalog="system" id="MVK-YY-4B2">
+                                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </imageView>
+                                                        </items>
+                                                        <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                                                    </group>
+                                                    <group alignment="left" verticalAlignment="center" layout="vertical" id="E1n-Rv-HVl">
+                                                        <items>
+                                                            <label alignment="left" text="Şirinevler ATM" id="xqS-P9-f2n">
+                                                                <fontDescription key="font" type="system" pointSize="15"/>
+                                                            </label>
+                                                            <label alignment="left" text="300m" id="8nc-Mr-FO3">
+                                                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <fontDescription key="font" type="system" weight="light" pointSize="12"/>
+                                                            </label>
+                                                        </items>
+                                                    </group>
+                                                </items>
+                                                <edgeInsets key="margins" left="5" right="0.0" top="0.0" bottom="0.0"/>
+                                            </group>
+                                            <connections>
+                                                <outlet property="atmBranchName" destination="xqS-P9-f2n" id="efM-ws-Cga"/>
+                                                <outlet property="distance" destination="8nc-Mr-FO3" id="tUK-7c-7k1"/>
+                                                <outlet property="icon" destination="MVK-YY-4B2" id="0F7-32-RpD"/>
+                                            </connections>
+                                        </tableRow>
+                                    </items>
+                                </table>
+                            </items>
+                            <edgeInsets key="margins" left="0.0" right="0.0" top="10" bottom="0.0"/>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="atmBranchTable" destination="9ue-mi-697" id="dkj-Tk-Wqi"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="125.95454545454545" y="240.76744186046511"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+    <resources>
+        <image name="applelogo" catalog="system" width="103" height="128"/>
+        <image name="building.columns.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="europeanUnion" width="24" height="16"/>
+        <image name="eurosign.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="phone.circle.fill" catalog="system" width="128" height="121"/>
+    </resources>
+</document>
